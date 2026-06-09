@@ -1,6 +1,6 @@
 ---
 name: comdr-workflow
-description: Comdr vs Coding boundary. Use when deciding whether a task should go to comdr-ask (editor operations) or be written as TypeScript directly.
+description: Comdr vs Coding boundary. Use when deciding whether a task should go to comdr-engine-ask (editor operations) or be written as TypeScript directly.
 paths: "**/*.ts"
 ---
 
@@ -8,14 +8,14 @@ paths: "**/*.ts"
 
 ## 判断线
 
-操作目标是**编辑器产物**（prefab/scene/组件属性）→ `comdr-ask` MCP tool。操作目标是**代码逻辑**（脚本/算法/数据流）→ 直接写 TypeScript。
+操作目标是**编辑器产物**（prefab/scene/组件属性）→ `comdr-engine-ask` MCP tool。操作目标是**代码逻辑**（脚本/算法/数据流）→ 直接写 TypeScript。
 
 ## 典型链路
 
 "做一个排行榜面板" →
-1. 节点层级、UI 组件挂载 → comdr-ask
+1. 节点层级、UI 组件挂载 → comdr-engine-ask
 2. 数据获取、排序、刷新逻辑 → Coding
-3. 视觉细节（spriteFrame 引用、字体大小）→ comdr-ask
+3. 视觉细节（spriteFrame 引用、字体大小）→ comdr-engine-ask
 
 ## 常见误判
 
