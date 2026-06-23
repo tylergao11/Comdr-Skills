@@ -1,6 +1,6 @@
 # Comdr-Skills
 
-Cocos Creator 3.x 专精 Claude Code Skills。给 Claude 注入资深 Cocos 开发者的设计判断力——不教 API，只教**什么时候该用什么**和**为什么**。
+Cocos Creator 3.x 专精 AI coding skills。给 Claude/Codex 注入资深 Cocos 开发者的设计判断力——不教 API，只教**什么时候该用什么**和**为什么**。
 
 ## 安装
 
@@ -11,6 +11,13 @@ git clone https://github.com/tylergao11/Comdr-Skills.git ~/.claude/skills/comdr-
 # 或者：作为项目 skills
 cp -r skills/* your-project/.claude/skills/
 cp -r agents/* your-project/.claude/agents/
+
+# Codex：安装指定 skill
+python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+  --repo tylergao11/Comdr-Skills \
+  --ref master \
+  --path skills/cocos-creator-3x-judgment \
+  --path skills/qzxz-migration-boundary
 ```
 
 ## Skills
@@ -23,6 +30,8 @@ cp -r agents/* your-project/.claude/agents/
 | `cocos-conventions` | 实战约定（硬编码→单一真相源、Interface 中心化、MVC 实际形态、节点引用策略、找 bug 纪律） |
 | `cocos-pitfalls` | 平台硬坑（纹理压缩、TTF 字体、JSC vs V8、微信小游戏限制） |
 | `comdr-workflow` | Comdr 与 Coding 协作判断——什么时候走 MCP tool、什么时候直接写代码 |
+| `cocos-creator-3x-judgment` | Codex 版 Cocos 3.x 判断层：生命周期、资源、UI、平台、代码审查、编辑器/代码边界 |
+| `qzxz-migration-boundary` | qzxz 七张血战 Lua→TS 迁移边界：主游戏/子游戏、PB 协议、缓存/UI/资源审计 |
 
 ## Subagents
 

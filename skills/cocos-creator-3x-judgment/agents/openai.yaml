@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cocos Creator 3.x Judgment"
+  short_description: "Cocos engine judgment for code review and fixes."
+  default_prompt: "Use $cocos-creator-3x-judgment to review this Cocos Creator 3.x change."

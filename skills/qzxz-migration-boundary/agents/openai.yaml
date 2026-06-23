@@ -1,0 +1,4 @@
+interface:
+  display_name: "qzxz Migration Boundary"
+  short_description: "qzxz subgame Lua-to-TS migration boundaries."
+  default_prompt: "Use $qzxz-migration-boundary before changing qzxz migration code."
