@@ -17,7 +17,8 @@ python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github
   --repo tylergao11/Comdr-Skills \
   --ref master \
   --path skills/cocos-creator-3x-judgment \
-  --path skills/qzxz-migration-boundary
+  --path skills/qzxz-migration-boundary \
+  --path skills/open-os
 ```
 
 ## Skills
@@ -30,6 +31,7 @@ python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github
 | `cocos-conventions` | 实战约定（硬编码→单一真相源、Interface 中心化、MVC 实际形态、节点引用策略、找 bug 纪律） |
 | `cocos-pitfalls` | 平台硬坑（纹理压缩、TTF 字体、JSC vs V8、微信小游戏限制） |
 | `comdr-workflow` | Comdr 与 Coding 协作判断——什么时候走 MCP tool、什么时候直接写代码 |
+| `open-os` | 开放作业体系：先探针、定边界、定验收，再修改代码和文档资产 |
 | `cocos-creator-3x-judgment` | Codex 版 Cocos 3.x 判断层：生命周期、资源、UI、平台、代码审查、编辑器/代码边界 |
 | `qzxz-migration-boundary` | qzxz 七张血战 Lua→TS 迁移边界：主游戏/子游戏、PB 协议、缓存/UI/资源审计 |
 
